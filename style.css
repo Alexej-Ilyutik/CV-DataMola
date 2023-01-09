@@ -1,6 +1,100 @@
+:root {
+  --base: #f8f9fa;
+  --primary: #2d3447;
+  --secondary: #b0c8e1;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 600px;
+  background: var(--base);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0px 10px 25px #333;
+  margin: 1.5rem;
+}
+
+.main__aside {
+  background: var(--primary);
+  padding: 1.5rem;
+}
+
+.main__article {
+  padding: 1.5rem;
+}
+
+.main__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  color: var(--base);
+  border-bottom: 1px solid var(--base);
+}
+
+.profile__foto {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile__foto img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile__name {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+.profile__position {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.profile__btn {
+  text-decoration: none;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.profile__btn:hover {
+  background: var(--primary);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
 }
