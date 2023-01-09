@@ -17,6 +17,43 @@
     <link rel="icon" href="./assets/curriculum.ico" />
   </head>
   <body>
+    <div class="menu">
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#contact" class="menu__link">Contact</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#education" class="menu__link">Education</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#certificates" class="menu__link">Certificates</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#languages" class="menu__link">Languages</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#summary" class="menu__link">Summary</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#projects" class="menu__link">Projects</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__arrow"></span
+            ><a href="#skills" class="menu__link">Skills</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu__burger">
+        <span></span>
+      </div>
+    </div>
     <main class="main">
       <aside class="main__aside aside">
         <div class="aside__profile profile">
@@ -33,7 +70,7 @@
           >
         </div>
         <div class="aside__block">
-          <h3 class="aside__title">Contact Info</h3>
+          <h3 id="contact" class="aside__title">Contact Info</h3>
           <ul class="aside__list">
             <li class="aside__item">
               <span class="aside__icons">
@@ -84,7 +121,7 @@
           </ul>
         </div>
         <div class="aside__block">
-          <h3 class="aside__title">Education Info</h3>
+          <h3 id="education" class="aside__title">Education Info</h3>
           <ul class="aside__list">
             <li class="aside__item item-column">
               <span class="aside__subtitle">2004-2009</span>
@@ -95,7 +132,7 @@
           </ul>
         </div>
         <div class="aside__block">
-          <h3 class="aside__title">Certificates</h3>
+          <h3 id="certificates" class="aside__title">Certificates</h3>
           <ul class="aside__list">
             <li class="aside__item item-column">
               <a
@@ -116,7 +153,7 @@
           </ul>
         </div>
         <div class="aside__block">
-          <h3 class="aside__title">Languages</h3>
+          <h3 id="languages" class="aside__title">Languages</h3>
           <ul class="aside__list">
             <li class="aside__item">
               <span class="aside__subtitle">Russian</span>
@@ -135,7 +172,7 @@
       </aside>
       <article class="main__article article">
         <section class="article__block">
-          <h3 class="article__title">Summary</h3>
+          <h3 id="summary" class="article__title">Summary</h3>
           <p class="article__text">
             Frontend-end developer with about a year of experience in creating
             websites and web applications. During this time, I managed to work
@@ -154,7 +191,7 @@
           </p>
         </section>
         <section class="article__block projects">
-          <h3 class="article__title">Projects</h3>
+          <h3 id="projects" class="article__title">Projects</h3>
           <div class="projects__container">
             <a
               class="projects__item"
@@ -276,7 +313,7 @@
           </div>
         </section>
         <section class="article__block skills">
-          <h3 class="article__title">Professional Skills</h3>
+          <h3 id="skills" class="article__title">Professional Skills</h3>
           <div class="skills__container">
             <ul class="skills__list">
               <li class="skills__item">JAVASCRIPT</li>
@@ -297,7 +334,6 @@
         </section>
       </article>
     </main>
-    <footer class="footer"></footer>
     <script src="script.js"></script>
   </body>
 </html>
