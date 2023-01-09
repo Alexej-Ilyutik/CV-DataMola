@@ -116,6 +116,12 @@ body {
   gap: 0.6rem;
 }
 
+.item-column {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
 .aside__icons {
   font-size: 1.2rem;
   color: var(--secondary);
@@ -124,4 +130,9 @@ body {
 .aside__text {
   font-weight: 400;
   color: var(--base);
+}
+
+.aside__dates {
+  color: var(--secondary);
+  font-weight: 400;
 }
