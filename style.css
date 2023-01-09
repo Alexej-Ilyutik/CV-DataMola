@@ -23,7 +23,7 @@ body {
 .main {
   position: relative;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   min-height: 600px;
   background: var(--base);
   display: grid;
@@ -38,7 +38,7 @@ body {
 }
 
 .main__article {
-  padding: 1.5rem;
+  padding: 3.5rem 2.5rem;
 }
 
 .aside__profile {
@@ -135,4 +135,71 @@ body {
 .aside__subtitle {
   color: var(--secondary);
   font-weight: 400;
+}
+
+.article__block {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.article__title {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.article__text {
+  margin-bottom: 1rem;
+}
+
+.projects__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  width: 15rem;
+  height: 11.3rem;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 15px 50px;
+  position: relative;
+}
+
+.projects__picture,
+.projects__description {
+  width: 100%;
+  height: 11.3rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.projects__picture {
+  object-fit: cover;
+}
+
+.projects__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  transform: translateY(100%);
+  transition: all 0.4s ease-out;
+}
+
+.projects__item:hover .projects__description {
+  transform: translateY(0%);
+}
+
+.project-description-text {
+  text-align: center;
+  color: var(--base);
 }
