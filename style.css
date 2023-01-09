@@ -41,7 +41,7 @@ body {
   padding: 1.5rem;
 }
 
-.main__profile {
+.aside__profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,4 +97,31 @@ body {
   background: var(--primary);
   color: var(--secondary);
   border: 1px solid var(--secondary);
+}
+
+.aside__block {
+  margin-top: 1.2rem;
+}
+
+.aside__title {
+  padding-bottom: 0.5rem;
+  color: var(--base);
+}
+
+.aside__item {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.aside__icons {
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.aside__text {
+  font-weight: 400;
+  color: var(--base);
 }
